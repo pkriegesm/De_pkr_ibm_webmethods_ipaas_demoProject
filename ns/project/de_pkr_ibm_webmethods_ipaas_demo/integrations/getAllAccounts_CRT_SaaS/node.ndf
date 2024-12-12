@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">peter.kriegesmann@ibm.com</value>
-    <value name="createdDate">1734019777276</value>
-    <value name="lastModifiedDate">1734019777276</value>
+    <value name="lastModifiedBy">peter.kriegesmann@ibm.com</value>
+    <value name="lastModifiedDate">1734033249416</value>
     <value name="displayName">getAllAccounts_CRT_SaaS</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -55,6 +54,24 @@
         <value name="name">getAllAccounts_ERT_Demolab</value>
         <value name="displayName">getAllAccounts_ERT_Demolab</value>
         <value name="itemType">INTEGRATIONS</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">PACKAGES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">WxAccountDemo</value>
+          <value name="groupName">WxAccountDemo;1.0</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="description">wx.accountdemo.pub.services:getAllCustomerAccounts</value>
+          <value name="serviceName">wx.accountdemo.pub.services:getAllCustomerAccounts</value>
+          <value name="displayName">getAllCustomerAccounts</value>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
       </record>
     </record>
   </record>
