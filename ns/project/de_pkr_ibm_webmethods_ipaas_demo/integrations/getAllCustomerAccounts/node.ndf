@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">peter.kriegesmann@ibm.com</value>
-    <value name="createdDate">1734015997149</value>
-    <value name="lastModifiedDate">1734015997149</value>
+    <value name="lastModifiedBy">peter.kriegesmann@ibm.com</value>
+    <value name="lastModifiedDate">1734017070849</value>
     <value name="displayName">getAllCustomerAccounts</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -66,6 +65,8 @@
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
       </record>
     </record>
   </record>
