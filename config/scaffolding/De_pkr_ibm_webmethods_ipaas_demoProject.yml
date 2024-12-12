@@ -7,3 +7,8 @@ packages:
   gitUrl: https://github.com/pkriegesm
   gitUsername: pkriegesm
   gitBranch: main
+- name: WxAccountDemo
+  gitServerName: de_pkr_github
+  gitUrl: https://github.com/pkriegesm
+  gitUsername: pkriegesm
+  gitBranch: main
