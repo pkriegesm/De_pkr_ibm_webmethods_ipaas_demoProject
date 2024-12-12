@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="1.0" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="INTEGRATIONS" SERVICE="project.de_pkr_ibm_webmethods_ipaas_demo.integrations:getAllAccounts_ERT_Demolab">
+  <COMMENT></COMMENT>
+</INVOKE>
+</FLOW>
