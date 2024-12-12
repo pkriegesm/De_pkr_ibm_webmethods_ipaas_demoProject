@@ -13,7 +13,16 @@ packages:
   gitUrl: https://github.com/pkriegesm
   gitUsername: pkriegesm
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: softwareag
 services:
+- serviceName: project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:AzureSQLDemoLabAccounts
+  packages:
+  - name: De_pkr_ibm_webmethods_ipaas_demoProject
+    version: "1.0"
+  - name: WxAccountDemo
+    version: "1.0"
 - serviceName: project.de_pkr_ibm_webmethods_ipaas_demo.integrations:getAllCustomerAccounts
   packages:
   - name: De_pkr_ibm_webmethods_ipaas_demoProject
@@ -28,3 +37,50 @@ services:
   packages:
   - name: WxAccountDemo
     version: "1.0"
+configurationVariables:
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.databaseName
+  : webMDemo
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.user
+  : azadmin
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.dbType
+  : MSSQL
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.portNumber
+  : "1433"
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.trustStore
+  : ""
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionEnabled
+  : "false"
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.password
+  : "{AES}/zsO8TU7B+bxVnHfVe31cw=="
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.datasourceClass
+  : com.microsoft.sqlserver.jdbc.SQLServerDataSource
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.keyStore
+  : ""
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.serverName
+  : eusagazuredemolab.database.windows.net
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.driverType
+  : AzureSQLServer
+  ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionManagerSettings.blockingTimeout
+  : "1000"
