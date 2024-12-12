@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: De_pkr_ibm_webmethods_ipaas_demoProject
+  gitServerName: de_pkr_github
+  gitUrl: https://github.com/pkriegesm
+  gitUsername: pkriegesm
+  gitBranch: main
