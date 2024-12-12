@@ -8,7 +8,23 @@ packages:
   gitUsername: pkriegesm
   gitBranch: main
 - name: WxAccountDemo
+  version: "1.0"
   gitServerName: de_pkr_github
   gitUrl: https://github.com/pkriegesm
   gitUsername: pkriegesm
   gitBranch: main
+services:
+- serviceName: project.de_pkr_ibm_webmethods_ipaas_demo.integrations:getAllCustomerAccounts
+  packages:
+  - name: De_pkr_ibm_webmethods_ipaas_demoProject
+    version: "1.0"
+  - name: WxAccountDemo
+    version: "1.0"
+- serviceName: wx.accountdemo.pub.services:getAllCustomerAccounts
+  packages:
+  - name: WxAccountDemo
+    version: "1.0"
+- serviceName: wx.accountdemo.impl.adapters:getAllAccounts
+  packages:
+  - name: WxAccountDemo
+    version: "1.0"
