@@ -5,7 +5,7 @@
 
   <!-- nodes -->
 
-<INVOKE NAME="INTEGRATIONS" SERVICE="project.de_pkr_ibm_webmethods_ipaas_demo.integrations:getAllAccounts_ERT_Demolab">
+<INVOKE NAME="INTEGRATIONS" SERVICE="project.de_pkr_ibm_webmethods_ipaas_demo.integrations:getAllAccounts_ERT_Demolab" DISABLED="true">
   <COMMENT></COMMENT>
 </INVOKE>
 
