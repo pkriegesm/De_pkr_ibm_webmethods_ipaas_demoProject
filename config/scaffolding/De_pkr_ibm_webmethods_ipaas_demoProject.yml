@@ -17,24 +17,10 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.de_pkr_ibm_webmethods_ipaas_demo.integrations:getAllAccounts_CRT_SaaS
+- serviceName: project.de_pkr_ibm_webmethods_ipaas_demo.integrations:createAccountAndBankData
   packages:
   - name: De_pkr_ibm_webmethods_ipaas_demoProject
     version: "1.0"
-  - name: WxAccountDemo
-    version: "1.0"
-- serviceName: project.de_pkr_ibm_webmethods_ipaas_demo.integrations:getAllAccounts_ERT_Demolab
-  packages:
-  - name: De_pkr_ibm_webmethods_ipaas_demoProject
-    version: "1.0"
-  - name: WxAccountDemo
-    version: "1.0"
-- serviceName: wx.accountdemo.pub.services:getAllCustomerAccounts
-  packages:
-  - name: WxAccountDemo
-    version: "1.0"
-- serviceName: wx.accountdemo.impl.adapters:getAllAccounts
-  packages:
   - name: WxAccountDemo
     version: "1.0"
 configurationVariables:
