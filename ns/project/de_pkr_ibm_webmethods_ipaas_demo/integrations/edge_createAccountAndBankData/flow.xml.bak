@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="1.0" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="WxAccountDemo" SERVICE="wx.accountdemo.pub.services:createCustomerAccounts">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/AccountAnBankData;4;0;project.de_pkr_ibm_webmethods_ipaas_demo.documenttypes:AccountAndBankData/AccountData;2;0/homepage;1;0" TO="/CustomerAccounts;4;1;wx.accountdemo.pub.doctypes:CustomerAccount/homepage;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/AccountAnBankData;4;0;project.de_pkr_ibm_webmethods_ipaas_demo.documenttypes:AccountAndBankData/AccountData;2;0/type;1;0" TO="/CustomerAccounts;4;1;wx.accountdemo.pub.doctypes:CustomerAccount/type;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/AccountAnBankData;4;0;project.de_pkr_ibm_webmethods_ipaas_demo.documenttypes:AccountAndBankData/AccountData;2;0/rating;1;0" TO="/CustomerAccounts;4;1;wx.accountdemo.pub.doctypes:CustomerAccount/rating;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/AccountAnBankData;4;0;project.de_pkr_ibm_webmethods_ipaas_demo.documenttypes:AccountAndBankData/AccountData;2;0/industry;1;0" TO="/CustomerAccounts;4;1;wx.accountdemo.pub.doctypes:CustomerAccount/industry;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/AccountAnBankData;4;0;project.de_pkr_ibm_webmethods_ipaas_demo.documenttypes:AccountAndBankData/AccountData;2;0/name;1;0" TO="/CustomerAccounts;4;1;wx.accountdemo.pub.doctypes:CustomerAccount/name;1;0">
+</MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/CustomerAccounts;4;1;wx.accountdemo.pub.doctypes:CustomerAccount/id;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">-1</value>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <COMMENT></COMMENT>
+</MAP>
+</INVOKE>
+</FLOW>
