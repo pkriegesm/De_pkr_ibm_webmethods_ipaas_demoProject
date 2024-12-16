@@ -17,44 +17,16 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: softwareag
 services:
-- serviceName: project.de_pkr_ibm_webmethods_ipaas_demo.integrations:edge_createAccountAndBankData
+- serviceName: project.de_pkr_ibm_webmethods_ipaas_demo.integrations:echoService
   packages:
   - name: De_pkr_ibm_webmethods_ipaas_demoProject
     version: "1.0"
   - name: WxAccountDemo
     version: "1.0"
-- serviceName: wx.accountdemo.pub.services:createCustomerAccounts
-  packages:
-  - name: WxAccountDemo
-    version: "1.0"
-- serviceName: pub.math:randomDouble
+- serviceName: pub.flow:debugLog
   packages:
   - name: WmPublic
     version: 11.1.0.0.2015
-- serviceName: wx.accountdemo.impl.adapters:insertAccounts
-  packages:
-  - name: WxAccountDemo
-    version: "1.0"
-- serviceName: wx.accountdemo.pub.services:insertBankDetailsForAccountID
-  packages:
-  - name: WxAccountDemo
-    version: "1.0"
-- serviceName: wx.accountdemo.pub.services:getCustomerAccountByID
-  packages:
-  - name: WxAccountDemo
-    version: "1.0"
-- serviceName: wx.accountdemo.impl.adapters:getAccountDataForExternalID
-  packages:
-  - name: WxAccountDemo
-    version: "1.0"
-- serviceName: pub.flow:throwExceptionForRetry
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2015
-- serviceName: wx.accountdemo.impl.adapters:insertBankDetailsForAccount
-  packages:
-  - name: WxAccountDemo
-    version: "1.0"
 configurationVariables:
   ? artConnection.De_pkr_ibm_webmethods_ipaas_demoProject.project.de_pkr_ibm_webmethods_ipaas_demo.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AzureSQLDemoLabAccounts.connectionSettings.databaseName
   : webMDemo
